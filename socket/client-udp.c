@@ -1,8 +1,6 @@
 /**
  * File name : client-udp.c
  * Description : Client side UDP based socket programming.
- * Last modified : 02 Jan 2019
- * Author : Santos
  **/
 
 /*----------------------------------------------------------------------
@@ -43,7 +41,7 @@ int main(void)
 	while(1)
 	{
 		printf("Enter a message : ");
-		fgets(messageBuffer, 1024, stdin);
+		fgets(messageBuffer, MESSAGE_LEN, stdin);
 
 		// Send message to the server
 		sendto(socketDescriptor, messageBuffer, strlen(messageBuffer) + 1, 0, (struct sockaddr *)&serverAddr, sizeof(serverAddr));
