@@ -1,8 +1,6 @@
 /**
  * File name : server-udp.c
  * Description : Server side UDP based socket programming.
- * Last modified : 02 Jan 2019
- * Author : Santos
  **/
 
 /*----------------------------------------------------------------------
